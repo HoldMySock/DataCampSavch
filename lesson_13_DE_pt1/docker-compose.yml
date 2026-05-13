@@ -1,0 +1,6 @@
+services:
+  etl:
+    build: .
+    volumes:
+      - ./raw_data:/app/raw_data:ro
+      - ./output:/app/output
